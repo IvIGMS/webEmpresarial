@@ -1,22 +1,25 @@
 from django.shortcuts import render, HttpResponse
 
+# Dentro de la app core solo vamos a dejar las paginas que son estaticas y no merecen
+# que hagamos una app para si mismas.
+
 def home(request):
-    return HttpResponse("<h1>home</h1>")
+    return render(request, 'core/home.html')
 
 def about(request):
-    return HttpResponse("<h1>about</h1>")
+    return render(request, 'core/about.html')
 
 def services(request):
-    return HttpResponse("<h1>services</h1>")
+    return render(request, 'core/services.html')
 
 def store(request):
-    return HttpResponse("<h1>store</h1>")
+    return render(request, 'core/store.html')
 
 def contact(request):
-    return HttpResponse("<h1>contact</h1>")
+    return render(request, 'core/contact.html')
 
 def blog(request):
-    return HttpResponse("<h1>blog</h1>")
+    return render(request, 'core/blog.html')
 
 def sample(request):
-    return HttpResponse("<h1>sample</h1>")
+    return render(request, 'core/sample.html')
