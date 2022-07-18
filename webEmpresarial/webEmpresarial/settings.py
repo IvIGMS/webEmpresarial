@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     # Apps creadas:
     'core.apps.CoreConfig',
     'services.apps.ServicesConfig',
+    'blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [
